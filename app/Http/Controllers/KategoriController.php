@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class KategoriController extends Controller
 {
-    public function index(): string{
+    public function index(){
         /*$data = [
             'kategori_kode' => 'SNK',
             'kategori_nama' => 'Snack/Makanan Ringan',
