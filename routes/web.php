@@ -39,6 +39,10 @@ Route::middleware('auth')->group(function () {
         Route::put('/{id}/update_ajax', [UserController::class, 'update_ajax']);
         Route::get('/{id}/delete_ajax', [UserController::class, 'confirm_ajax']);
         Route::delete('/{id}/delete_ajax', [UserController::class, 'delete_ajax']);
+        Route::get('/barang/import', [UserController::class, 'import']);
+        Route::post('/barang/import_ajax', [UserController::class, 'import_ajax']);
+        Route::get('/barang/export_excel', [UserController::class, 'export_excel']);
+        Route::get('/barang/export_pdf', [UserController::class, 'export_pdf']);
         Route::delete('/{id}', [UserController::class, 'destroy']);
     });
 
